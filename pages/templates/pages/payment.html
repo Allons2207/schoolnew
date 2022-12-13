@@ -1,0 +1,70 @@
+{% extends 'dashboard.html' %}
+{% load render_table from django_tables2 %}
+{% load bootstrap4 %}
+
+{% block dashboard-body %}
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-12">
+            <h4>
+                Student Payment
+            </h4>
+        </div>
+        
+        <div class="col-12">
+            <form action="" method="POST" class="form">
+                <section style="background-color: #eee;">
+                    <div class="">
+                      <div class="row d-flex justify-content-center">
+                        <div class="col-md-12 col-lg-10 col-xl-8">
+                          <div class="card">
+                            <div class="card-body p-md-5">
+                              <div>
+                                <h4>Make Payment</h4>
+                                <p class="text-muted pb-2">
+                                  Please make kindly verify that the details are correct
+                                </p>
+                              </div>
+                  
+                              <div class="px-3 py-4 border border-primary border-2 rounded mt-4 d-flex justify-content-between">
+                                <div class="d-flex flex-row align-items-center">
+                                  <img src="https://i.imgur.com/S17BrTx.webp" class="rounded" width="60" />
+                                  <div class="d-flex flex-column ms-4">
+                                    <span class="h5 mb-1">School Ad</span>
+                                    <span class="small text-muted">Payment</span>
+                                  </div>
+                                </div>
+                              </div>
+                  
+                              <h4 class="mt-5">Payment details</h4>
+                  
+                      
+                  
+                              <h6 class="mt-4 mb-3 text-primary text-uppercase">ADD PAYMENT METHOD</h6>
+                  
+                              <div class="form-outline">
+                                <input type="text" id="formControlLg" name="amount" class="form-control form-control-lg" />
+                                <label class="form-label" for="formControlLg">Amount</label>
+                                <input type="date" id="formControlLg" name="paydate" class="form-control form-control-lg" />
+                                <label class="form-label" for="formControlLg">Date</label>
+                                <input type="text" id="formControlLg" name="reason" class="form-control form-control-lg" />
+                                <label class="form-label" for="formControlLg">Reason For Payment</label>
+                                <input type="text" id="formControlLg" name="method" class="form-control form-control-lg" />
+                                <label class="form-label" for="formControlLg">Payment Method</label>
+                              </div>
+                              <div class="mt-3">
+                                <button type="submit" class="btn btn-primary btn-block btn-lg">
+                                  Proceed to payment <i class="fas fa-long-arrow-alt-right"></i>
+                                </button>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </section>
+            </form>
+        </div>     
+    </div>
+</div>
+{% endblock %}
